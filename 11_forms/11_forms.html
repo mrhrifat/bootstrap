@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Forms | Bootstrap 4</title>
+</head>
+<body>
+      <h1 class="display-3 text-center my-4">Forms</h1>
+      <div class="container">
+        <!--########################START HERE#########################-->
+
+        <!-- FORM -->
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter name">
+            </div>
+            <div>
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="Enter email">
+                <small>Your email will not be shared with anyone</small>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" readonly>
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender">
+                <option>Male</option>
+                <option>Female</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" rows="3"></textarea>
+            </div>
+            <div>
+                <label for="file">File input</label>
+                <input type="file" id="file">
+                <small id="fileHelp">Max 3mb size</small>
+            </div>
+
+            <fieldset>
+                <legend>What are you using this service for?</legend>
+                <div>
+                <label>
+                    <input type="radio" value="option1" checked>
+                    Personal
+                </label>
+                </div>
+                <div class="form-check">
+                <label>
+                    <input type="radio" value="option2">
+                    Commercial Use
+                </label>
+                </div>
+                <div>
+                <label>
+                    <input type="radio" value="option3" disabled>
+                   Testing
+                </label>
+                </div>
+            </fieldset>
+            <div>
+                <label>
+                <input type="checkbox">
+                    Sign up for newsletter
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <br><br>
+
+        <!-- INLINE FORM -->
+        <form>
+            <input type="text" id="username" placeholder="Enter username">
+            <input type="text" id="password" placeholder="Password">
+            <div>
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <br><br>
+
+        <!-- VALIDATION -->
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username">
+            <div>Username available</div>
+            <small>Must be at least 8 characters</small>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="text" id="password">
+            <div>That password is not safe</div>
+            <small>Please use a strong password</small>
+        </div>
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
