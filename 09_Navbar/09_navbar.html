@@ -97,23 +97,28 @@
     <br><br>
 
     <!-- NAVBAR WITH DROPDOWN -->
-    <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
-    <nav class="navbar navbar-light bg-light navbar-expand-md">
+    <nav class="navbar navbar-dark bg-success navbar-expand-md">
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navBar3">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="navBar3">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item dropdown" data-toggle="dropdown">
+                        <a class="nav-link" href="#">Blog</a>
+                        <div class="dropdown-menu bg-info">
+                            <a href="#" class="dropdown-item">Programming</a>
+                            <a href="#" class="dropdown-item">Islamic</a>
+                            <a href="#" class="dropdown-item">Travel</a>
+                            <a href="#" class="dropdown-item">Math</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>
@@ -140,10 +145,10 @@
         <!-- NAVS -->
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Link 1</a>
+                <a class="nav-link" href="#">Link 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
+                <a class="nav-link active" href="#">Link 2</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Link 3</a>
@@ -156,48 +161,36 @@
         <br><br>
 
         <!-- HORIZONTAL ALIGN -->
-        <ul class="nav nav-pills justify-content-center">
+
+        <ul class="nav nav-pills justify-content-end">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Link 1</a>
+                <a class="nav-link" href="#">Link 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
+                <a class="nav-link disabled" href="#">Link 2</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Link 3</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 4</a>
+                <a class="nav-link active" href="#">Link 4</a>
             </li>
         </ul>
 
         <br><br>
 
         <!-- RIGHT ALIGN -->
-        <ul class="nav nav-pills justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Link 1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 3</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 4</a>
-            </li>
-        </ul>
+
 
         <br><br>
 
         <!-- VERTICAL -->
-        <ul class="nav nav-pills flex-column">
+        <ul class="nav nav-pills flex flex-column">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Link 1</a>
+                <a class="nav-link" href="#">Link 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
+                <a class="nav-link active" href="#">Link 2</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Link 3</a>
@@ -230,18 +223,29 @@
         <!-- WITH DROPDOWNS -->
         <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Link 1</a>
+                <a class="nav-link" href="#">Link 1</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Link 2</a>
             </li>
+            <li class="nav-item dropdown dropup">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Drop Up</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Dropup 1</a>
+                    <a href="#" class="dropdown-item">Dropup 2</a>
+                    <a href="#" class="dropdown-item">Dropup 3</a>
+                    <a href="#" class="dropdown-item">Dropup 4</a>
+                </div>
+            </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Link 3</a>
-                <div class="dropdown-menu bg-danger">
-                    <a href="#" class="dropdown-item">Demo Link 1</a>
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Drop Down</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Dropdown 1</a>
+                    <a href="#" class="dropdown-item">Dropdown 2</a>
+                    <a href="#" class="dropdown-item">Dropdown 3</a>
                     <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">Demo Link 2</a>
-                    <a href="#" class="dropdown-item">Demo Link 3</a>
+                    <a href="#" class="dropdown-item">Dropdown 4</a>
+                    <a href="#" class="dropdown-item">Dropdown 5</a>
                 </div>
             </li>
             <li class="nav-item">
