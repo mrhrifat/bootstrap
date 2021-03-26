@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Forms | Bootstrap 4</title>
 </head>
+
 <body>
-      <h1 class="display-3 text-center my-4">Forms</h1>
-      <div class="container">
+    <h1 class="display-3 text-center my-4">Forms</h1>
+    <div class="container">
         <!--########################START HERE#########################-->
 
         <!-- FORM -->
-        <form>
+        <form class="form">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input class="form-control" type="text" id="name" placeholder="Enter name">
@@ -31,8 +33,8 @@
             <div class="form-group">
                 <label for="gender">Gender</label>
                 <select class="form-control" id="gender">
-                <option>Male</option>
-                <option>Female</option>
+                    <option>Male</option>
+                    <option>Female</option>
                 </select>
             </div>
             <div class="form-group">
@@ -48,62 +50,62 @@
             <fieldset class="form-group">
                 <legend>What are you using this service for?</legend>
                 <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" value="option1" checked>
-                    Personal
-                </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option1" checked>
+                        Personal
+                    </label>
                 </div>
                 <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" value="option2">
-                    Commercial Use
-                </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option2">
+                        Commercial Use
+                    </label>
                 </div>
                 <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" value="option3" disabled>
-                   Testing
-                </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option3" disabled>
+                        Testing
+                    </label>
                 </div>
             </fieldset>
-            <div>
-                <label>
-                <input type="checkbox">
+            <div class="form-group">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">
                     Sign up for newsletter
                 </label>
             </div>
-            <button type="submit">Submit</button>
+            <button class="btn btn-success" type="submit">Submit</button>
         </form>
 
         <br><br>
 
         <!-- INLINE FORM -->
-        <form>
-            <input type="text" id="username" placeholder="Enter username">
-            <input type="text" id="password" placeholder="Password">
-            <div>
-                <label>
-                    <input type="checkbox"> Remember me
+        <form class="form-inline">
+            <input class="form-control" type="text" id="username" placeholder="Enter username">
+            <input class="form-control mx-2" type="text" id="password" placeholder="Password">
+            <div class="form-group">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
                 </label>
             </div>
 
-            <button type="submit">Submit</button>
+            <button class="btn btn-outline-success ml-2" type="submit">Submit</button>
         </form>
 
         <br><br>
 
         <!-- VALIDATION -->
-        <div>
-            <label for="username">Username</label>
-            <input type="text" id="username">
-            <div>Username available</div>
-            <small>Must be at least 8 characters</small>
+        <div class="form-group">
+            <label class="form-input-label" for="username">Username</label>
+            <input class="form-control is-valid" type="text" id="username">
+            <div class="valid-feedback">Username available</div>
+            <small class="form-text text-muted">Must be at least 8 characters</small>
         </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="text" id="password">
-            <div>That password is not safe</div>
-            <small>Please use a strong password</small>
+        <div class="form-group">
+            <label class="form-input-label" for="password">Password</label>
+            <input class="form-control is-invalid" type="text" id="password">
+            <div class="invalid-feedback">That password is not safe</div>
+            <small class="form-text text-muted">Please use a strong password</small>
         </div>
 
     </div><!-- ./container -->
@@ -113,4 +115,5 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
