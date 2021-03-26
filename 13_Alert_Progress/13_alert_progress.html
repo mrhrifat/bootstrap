@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Alert & Progress Bars | Bootstrap 4</title>
 </head>
+
 <body>
-      <h1 class="display-4 text-center my-4">Alerts & Progress Bars</h1>
-      <div class="container">
+    <h1 class="display-4 text-center my-4">Alerts & Progress Bars</h1>
+    <div class="container">
         <!--########################START HERE#########################-->
 
         <!-- ALERTS -->
         <div class="alert alert-success">
             <strong>Success</strong> Blog post added <a class="alert-link" href="#">Check it out</a>
         </div>
-        <div class="alert alert-info">
+        <div class="alert alert-primary">
             <strong>Attention</strong> You have a new message <a class="alert-link" href="#">Check it out</a>
         </div>
         <div class="alert alert-warning">
@@ -29,7 +31,7 @@
         </div>
 
         <!-- DISMISSABLE -->
-        <div class="alert alert-success alert-dismissable fade show">
+        <div class="alert alert-success alert-dismissable fade-show">
             <button type="button" class="close" data-dismiss="alert">
                 <span>&times;</span>
             </button>
@@ -48,15 +50,15 @@
         </div>
         <br>
         <div class="progress">
-            <div class="progress-bar bg-success" style="width: 50%">50%</div>
+            <div class="progress-bar" style="width: 50%">50%</div>
         </div>
         <br>
         <div class="progress">
-            <div class="progress-bar bg-info" style="width: 75%">75%</div>
+            <div class="progress-bar bg-success" style="width: 75%">75%</div>
         </div>
         <br>
         <div class="progress">
-            <div class="progress-bar bg-warning text-dark" style="width: 100%">100%</div>
+            <div class="progress-bar text-left pl-2" style="width: 100%">100%</div>
         </div>
         <br>
         <div class="progress">
@@ -64,7 +66,13 @@
         </div>
         <br>
         <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated text-left pl-3" style="width: 85%">Bootstrap</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">Bootstrap</div>
+        </div>
+        <br>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">
+            </div>
         </div>
 
     </div><!-- ./container -->
@@ -74,4 +82,5 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
