@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,111 +8,133 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Media Object | Bootstrap 4</title>
     <style>
-        img{
-          width: 60px;
-          border: 1px solid #999;
+        img {
+            width: 60px;
+            border: 1px solid #999;
         }
     </style>
 </head>
+
 <body>
-      <h1 class="display-3 text-center my-4">Media Object</h1>
-	    <div class="container">
+    <h1 class="display-3 text-center my-4">Media Object</h1>
+    <div class="container">
 
 
         <!--########################START HERE#########################-->
 
-      <!-- MEDIA OBJECT -->
-      <div>
-          <img src="img/image4.jpg">
-          <div>
-              <h5>Media heading</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-      </div>
+        <!-- MEDIA OBJECT -->
+        <div class="media">
+            <img class="d-flex mr-3" src="img/image4.jpg">
+            <div class="media-body">
+                <h5>Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+        </div>
 
-      <br><br>
+        <br><br>
 
-      <!-- NESTING MEDIA OBJECTS -->
-      <div>
-          <img src="img/image4.jpg">
-          <div>
-              <h5>Media heading</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        <!-- NESTING MEDIA OBJECTS -->
+        <div class="media">
+            <img class="d-flex mr-3" src="img/image4.jpg">
+            <div class="media-body">
+                <h5>Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
 
-              <div>
-              <a href="#">
-                  <img src="img/image4.jpg">
-              </a>
-              <div>
-                  <h5>Media heading</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-              </div>
-          </div>
-      </div>
+                <div>
+                    <a href="#">
+                        <img class="d-flex mr-3" src="img/image4.jpg">
+                    </a>
+                    <div class="media-body">
+                        <h5>Media heading</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+            </div>
+        </div>
 
-      <br><br>
+        <br><br>
 
-      <!-- TOP ALIGNED (DEFAULT) -->
-      <div>
-          <img src="img/image4.jpg">
-          <div>
-              <h5>Top aligned media</h5>
-              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-              <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-          </div>
-      </div>
+        <!-- TOP ALIGNED (DEFAULT) -->
+        <div class="media">
+            <img class="d-flex align-self-top mr-3" src="img/image4.jpg">
+            <div class="media-body">
+                <h5>Top aligned media</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+        </div>
 
-      <br><br>
+        <br><br>
 
-      <!-- CENTER ALIGNED -->
-      <div>
-          <img class="d-flex align-self-center mr-3" src="img/image4.jpg">
-          <div>
-              <h5>Center aligned media</h5>
-              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-              <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-          </div>
-      </div>
+        <!-- CENTER ALIGNED -->
+        <div class="media">
+            <img class="d-flex align-self-center mr-3" src="img/image4.jpg">
+            <div class="media-body">
+                <h5>Center aligned media</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+        </div>
 
-      <br><br>
+        <br><br>
 
-      <!-- BOTTOM ALIGNED -->
-      <div>
-          <img class="d-flex align-self-end mr-3" src="img/image4.jpg">
-          <div>
-              <h5>Bottom aligned media</h5>
-              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-              <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-          </div>
-      </div>
+        <!-- BOTTOM ALIGNED -->
+        <div class="media">
+            <img class="d-flex align-self-end mr-3" src="img/image4.jpg">
+            <div class="media-body">
+                <h5>Bottom aligned media</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+        </div>
 
-      <br><br>
+        <br><br>
 
-      <!-- MEDIA LIST -->
-      <ul>
-          <li>
-              <img src="img/image4.jpg">
-              <div>
-              <h5>List based media object</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-          </li>
-          <li>
-              <img class="d-flex mr-3" src="img/image4.jpg">
-              <div>
-              <h5>List based media object</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-          </li>
-          <li>
-              <img src="img/image4.jpg">
-              <div>
-              <h5>List based media object</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-          </li>
-      </ul>
+        <!-- MEDIA LIST -->
+        <ul class="list-unstyled">
+            <li class="media mt-4">
+                <img class="d-flex mr-3" src="img/image4.jpg">
+                <div class="media-body">
+                    <h5>List based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+            <li class="media mt-4">
+                <img class="d-flex mr-3" src="img/image4.jpg">
+                <div class="media-body">
+                    <h5>List based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+            <li class="media mt-4">
+                <img class="d-flex mr-3" src="img/image4.jpg">
+                <div class="media-body">
+                    <h5>List based media object</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+        </ul>
 
     </div><!-- ./container -->
     <div style="margin-top:500px;"></div>
@@ -120,4 +143,5 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
