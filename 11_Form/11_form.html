@@ -14,53 +14,54 @@
 
         <!-- FORM -->
         <form>
-            <div>
+            <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter name">
+                <input class="form-control" type="text" id="name" placeholder="Enter name">
             </div>
-            <div>
+
+            <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" id="email" placeholder="Enter email">
-                <small>Your email will not be shared with anyone</small>
+                <input class="form-control" type="email" id="email" placeholder="Enter email">
+                <small class="text-muted form-text">Your email will not be shared with anyone</small>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password" readonly>
+                <input class="form-control" type="password" id="password" placeholder="Password" readonly>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="gender">Gender</label>
-                <select id="gender">
+                <select class="form-control" id="gender">
                 <option>Male</option>
                 <option>Female</option>
                 </select>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" rows="3"></textarea>
+                <textarea class="form-control" id="message" rows="3"></textarea>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="file">File input</label>
-                <input type="file" id="file">
-                <small id="fileHelp">Max 3mb size</small>
+                <input class="form-file-control" type="file" id="file">
+                <small class="form-text text-muted" id="fileHelp">Max 3mb size</small>
             </div>
 
-            <fieldset>
+            <fieldset class="form-group">
                 <legend>What are you using this service for?</legend>
-                <div>
-                <label>
-                    <input type="radio" value="option1" checked>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" value="option1" checked>
                     Personal
                 </label>
                 </div>
                 <div class="form-check">
-                <label>
-                    <input type="radio" value="option2">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" value="option2">
                     Commercial Use
                 </label>
                 </div>
-                <div>
-                <label>
-                    <input type="radio" value="option3" disabled>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" value="option3" disabled>
                    Testing
                 </label>
                 </div>
