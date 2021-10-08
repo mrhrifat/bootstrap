@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Tooltips | Bootstrap 4</title>
+</head>
+<body>
+  <h1 class="display-3 text-center my-4">Popovers</h1>
+  <div class="container">
+    <!--########################START HERE#########################-->
+
+    <!-- POPOVER -->
+    <button id="myPopover1" class="btn btn-sm btn-primary" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, fugit." data-placement="top" >Toggle popover</button>
+
+    <button class="btn btn-sm btn-success" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, fugit." data-placement="right" >Toggle popover</button>
+
+    <button class="btn btn-sm btn-warning" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, fugit." data-placement="bottom" >Toggle popover</button>
+
+    <button class="btn btn-sm btn-danger" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, fugit." data-placement="left" >Toggle popover</button>
+
+    <br> <br>
+
+    <!-- DISMISSIBLE POPOVER -->
+    <button class="btn btn-sm btn-info" data-trigger="focus" data-toggle="popover" title="Hello World!" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, fugit." data-placement="left" >Toggle popover</button>
+
+    <br><hr>
+
+    <!-- Control with JS-->
+    <button class="btn btn-secondary btn-sm" onclick="showPopover()">Show popover</button>
+
+    <button class="btn btn-secondary btn-sm" onclick="hidePopover()">Hide popover</button>
+
+    <button class="btn btn-secondary btn-sm" onclick="togglePopover()">Toggle popover</button>
+  </div>
+
+  <div style="margin-top:500px;"></div>
+
+  <script src="js/jquery-slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $('[data-toggle="popover"]').popover();
+
+    function showPopover(){
+      $('#myPopover1').popover('show');
+    }
+    function hidePopover(){
+      $('#myPopover1').popover('hide');
+    }
+    function togglePopover(){
+      $('#myPopover1').popover('toggle');
+    }
+  </script>
+</body>
+</html>
