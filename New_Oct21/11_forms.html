@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,86 +8,267 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Forms | Bootstrap 4</title>
 </head>
+
 <body>
-      <h1 class="display-3 text-center my-4">Forms</h1>
-      <div class="container">
+    <h1 class="display-3 text-center my-4">Forms</h1>
+    <div class="container">
         <!--########################START HERE#########################-->
 
         <!-- FORM -->
-        <form>
-            <div>
+        <form class="form">
+            <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter name">
+                <input class="form-control" type="text" id="name" placeholder="Enter name">
             </div>
-            <div>
+            <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" id="email" placeholder="Enter email">
-                <small>Your email will not be shared with anyone</small>
+                <input class="form-control" type="email" id="email" placeholder="Enter email">
+                <small class="form-text text-muted">Your email will not be shared with anyone</small>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password" readonly>
+                <input class="form-control" type="password" id="password" placeholder="Password" readonly>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="gender">Gender</label>
-                <select id="gender">
-                <option>Male</option>
-                <option>Female</option>
+                <select class="form-control" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
                 </select>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" rows="3"></textarea>
+                <textarea class="form-control" id="message" rows="3"></textarea>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="file">File input</label>
-                <input type="file" id="file">
-                <small id="fileHelp">Max 3mb size</small>
+                <input class="form-file-control" type="file" id="file">
+                <small class="form-text text-muted" id="fileHelp">Max 3mb size</small>
             </div>
 
-            <fieldset>
-                <legend>What are you using this service for?</legend>
-                <div>
-                <label>
-                    <input type="radio" value="option1" checked>
-                    Personal
-                </label>
+            <fieldset class="form-group">
+
+                <legend class="form-check-label">What are you using this service for?</legend>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option1" checked>
+                        Personal
+                    </label>
                 </div>
-                <div class="">
-                <label>
-                    <input type="radio" value="option2">
-                    Commercial Use
-                </label>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option2">
+                        Commercial Use
+                    </label>
                 </div>
-                <div>
-                <label>
-                    <input type="radio" value="option3" disabled>
-                   Testing
-                </label>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option3" disabled>
+                        Testing
+                    </label>
                 </div>
             </fieldset>
-            <div>
-                <label>
-                <input type="checkbox">
+
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">
                     Sign up for newsletter
                 </label>
             </div>
-            <button type="submit">Submit</button>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+
+
+        <br>
+        <hr>
+        <br>
+
+
+        <form class="form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Please enter name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Please enter email">
+                <small class="form-text text-muted">Your data won't be shared with anyone</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Please enter password">
+                <small class="form-text text-muted">Your data won't be shared with anyone</small>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select name="gender" class="form-control" id="check">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="" cols="3" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">File input</label>
+                <input type="file" name="file" class="form-file-control">
+                <small class="form-text text-muted"></small>
+            </div>
+            <fieldset class="form-group">
+                <legend class="form-check-label">What are you using this service for?</legend>
+
+                <div class="form-check">
+                    <label for="radio" class="form-check-label">
+                        <input type="radio" name="cause" id="personal" class="form-check-input">Personal
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label for="radio" class="form-check-label">
+                        <input type="radio" name="cause" id="business" class="form-check-input">Business
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label for="radio" class="form-check-label">
+                        <input type="radio" name="cause" id="commercial" class="form-check-input">Commercial
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label for="radio" class="form-check-label">
+                        <input type="radio" name="cause" id="testing" class="form-check-input">Testing
+                    </label>
+                </div>
+            </fieldset>
+            <div class="form-check">
+                <label for="agree" class="form-check-label">
+                    <input type="checkbox" name="agree" id="agree" class="form-check-input"> I agree with terms and
+                    condtions
+                </label>
+            </div>
+            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success">
         </form>
 
         <br><br>
 
+
+        <br>
+        <hr>
+        <br>
+
         <!-- INLINE FORM -->
-        <form>
-            <input type="text" id="username" placeholder="Enter username">
-            <input type="text" id="password" placeholder="Password">
-            <div>
-                <label>
-                    <input type="checkbox"> Remember me
+        <form class="form-inline">
+            <input class="form-control" type="text" id="username" placeholder="Enter username">
+            <input class="form-control" type="text" id="password" placeholder="Password">
+            <div class=from-check>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
                 </label>
             </div>
 
-            <button type="submit">Submit</button>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <form class="form-inline">
+            <input type="email" name="email" id="email" placeholder="Enter email" class="form-control">
+            <input type="password" name="password" id="password" placeholder="password" class="form-control">
+            <div class="form-check">
+                <label for="agree" class="form-check-label">
+                    <input type="checkbox" name="agree" id="" agree>Remember Me
+                </label>
+            </div>
+            <input type="submit" class="btn btn-success" value="Sign in">
+        </form>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <form class="form">
+            <div class="form-group">
+                <label for="emails">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email" class="form-control">
+                <div class="valid-feedback">Email is ok</div>
+                <div class="invalid-feedback">Chagne email address</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password" class="form-control">
+                <div class="valid-feedback">Password is strong</div>
+                <div class="invalid-feedback">Password incorrect</div>
+            </div>
+            <input type="submit" class="btn btn-warning" value="Submit">
+        </form>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <form class="form">
+            <div class="form-group">
+                <label for="emails">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email" class="form-control is-valid">
+                <div class="valid-feedback">Email is ok</div>
+                <div class="invalid-feedback">Chagne email address</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password"
+                    class="form-control is-valid">
+                <div class="valid-feedback">Password is strong</div>
+                <div class="invalid-feedback">Password incorrect</div>
+            </div>
+            <input type="submit" class="btn btn-warning" value="Submit">
+        </form>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <form class="form">
+            <div class="form-group">
+                <label for="emails">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email" class="form-control is-invalid">
+                <div class="valid-feedback">Email is ok</div>
+                <div class="invalid-feedback">Chagne email address</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password"
+                    class="form-control is-invalid">
+                <div class="valid-feedback">Password is strong</div>
+                <div class="invalid-feedback">Password incorrect</div>
+            </div>
+            <input type="submit" class="btn btn-warning" value="Submit">
+        </form>
+
+        <br>
+        <hr>
+        <br>
+
+        <form class="form">
+            <div class="form-group">
+                <label for="emails">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email" class="form-control is-invalid">
+                <div class="valid-feedback">Email is ok</div>
+                <div class="invalid-feedback">Chagne email address</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password"
+                    class="form-control is-valid">
+                <div class="valid-feedback">Password is strong</div>
+                <div class="invalid-feedback">Password incorrect</div>
+            </div>
+            <input type="submit" class="btn btn-warning" value="Submit">
         </form>
 
         <br><br>
@@ -112,4 +294,5 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,75 +8,90 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>List Groups & Badges | Bootstrap 4</title>
 </head>
+
 <body>
-      <h1 class="display-3 text-center my-4">List Groups & Badges</h1>
-      <div class="container">
+    <h1 class="display-3 text-center my-4">List Groups & Badges</h1>
+    <div class="container">
         <!-- LIST GROUP -->
-        <ul>
-            <li>My List Item One</li>
-            <li>My List Item Two</li>
-            <li>My List Item Three</li>
-            <li>My List Item Four</li>
-            <li>My List Item Five</li>
+        <ul class="list-group">
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item">My List Item Two</li>
+            <li class="list-group-item">My List Item Three</li>
+            <li class="list-group-item">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
         </ul>
 
         <br><br>
 
         <!-- LIST GROUP WITH LINKS -->
-        <ul>
-            <a href="#">My List Item One</a>
-            <a href="#">My List Item Two</a>
-            <a href="#">My List Item Three</a>
-            <a href="#">My List Item Four</a>
-            <a href="#">My List Item Five</a>
+        <ul class="list-group">
+            <a class="list-group-item list-group-item-action" href="#">My List Item One</a>
+            <a class="list-group-item list-group-item-action" href="#">My List Item Two</a>
+            <a class="list-group-item list-group-item-action" href="#">My List Item Three</a>
+            <a class="list-group-item list-group-item-action" href="#">My List Item Four</a>
+            <a class="list-group-item list-group-item-action" href="#">My List Item Five</a>
         </ul>
 
         <br><br>
 
         <!-- CONTEXTUAL CLASSES -->
-        <ul>
-            <li>My List Item One</li>
-            <li>My List Item Two</li>
-            <li>My List Item Three</li>
-            <li>My List Item Four</li>
-            <li>My List Item Five</li>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-primary">My List Item One</li>
+            <li class="list-group-item list-group-item-action list-group-item-danger">My List Item Two</li>
+            <li class="list-group-item list-group-item-action list-group-item-warning">My List Item Three</li>
+            <li class="list-group-item list-group-item-action list-group-item-success">My List Item Four</li>
+            <li class="list-group-item list-group-item-action list-group-item-secondary">My List Item Five</li>
         </ul>
 
         <br><br>
 
         <!-- LIST GROUP WITH BADGES -->
-        <ul>
-            <li>My List Item One</li>
-            <li>My List Item Two <span>23</span></li>
-            <li>My List Item Three <span>43</span></li>
-            <li>My List Item Four</li>
-            <li>My List Item Five</li>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action">My List Item One</li>
+            <li class="list-group-item list-group-item-action">My List Item Two</li>
+            <li class="list-group-item list-group-item-action">My List Item Three
+                <span class="badge badge-primary">23</span>
+            </li>
+            <li class="list-group-item list-group-item-action">My List Item Four
+                <span class="badge badge-success align-top">56</span>
+            </li>
+            <li class="list-group-item list-group-item-action">My List Item Five</li>
         </ul>
 
         <br><br>
 
         <!-- CUSTOM CONTENT -->
-        <div>
-            <a href="#">
+        <div class="list-group">
+            <a class="list-group-item" href="#">
                 <div>
-                <h5>My Post One</h5>
-                <small>3 days ago</small>
+                    <h5>My Post One</h5>
+                    <small>3 days ago</small>
                 </div>
                 <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 <small>By Moshiur</small>
             </a>
-            <a href="#">
+            <a class="list-group-item" href="#">
                 <div>
-                <h5>My Post Two</h5>
-                <small>3 days ago</small>
+                    <h5>Post Number 5</h5>
+                    <small>Update 4 minutes ago</small>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat tenetur sequi voluptas commodi.
+                </p>
+                <small>By Ibn</small>
+            </a>
+            <a class="list-group-item" href="#">
+                <div>
+                    <h5>My Post Two</h5>
+                    <small>3 days ago</small>
                 </div>
                 <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 <small>By Moshiur</small>
             </a>
-            <a href="#">
+            <a class="list-group-item" href="#">
                 <div>
-                <h5>My Post Three</h5>
-                <small>3 days ago</small>
+                    <h5>My Post Three</h5>
+                    <small>3 days ago</small>
                 </div>
                 <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 <small>By Moshiur</small>
@@ -85,17 +101,24 @@
         <br><br>
 
         <!-- BREADCRUMB -->
-        <ol>
-            <li>Home</li>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
         </ol>
-        <ol>
-            <li><a href="#">Home</a></li>
-            <li>Users</li>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item">Users</li>
         </ol>
-        <ol>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Users</a></li>
-            <li>Moshiur</li>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Users</a></li>
+            <li class="breadcrumb-item">Moshiur</li>
+        </ol>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">About</a></li>
+            <li class="breadcrumb-item"><a href="#">Person</a></li>
+            <li class="breadcrumb-item"><a href="#">Author</a></li>
+            <li class="breadcrumb-item">Books</li>
         </ol>
 
     </div><!-- ./container -->
@@ -105,4 +128,5 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
