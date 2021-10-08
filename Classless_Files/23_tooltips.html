@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Tooltips | Bootstrap 4</title>
+</head>
+<body>
+  <h1 class="display-3 text-center my-4">Tooltips</h1>
+  <div class="container">
+    <!--########################START HERE#########################-->
+
+    <!-- TOOLTIPS -->
+    <button class="btn btn-primary" data-placement="top" data-toggle="tooltip" title="Hello World!">Tooltip on top</button>
+
+    <button class="btn btn-primary" data-placement="left" data-toggle="tooltip" title="Hello World!">Tooltip on left</button>
+
+    <button class="btn btn-primary" data-placement="right" data-toggle="tooltip" title="Hello World!">Tooltip on right</button>
+
+    <button class="btn btn-primary" data-placement="bottom" data-toggle="tooltip" title="Hello World!">Tooltip on bottom</button>
+
+    <br> <br>
+
+    <!-- TOOLTIPS WITH HTML -->
+    <button id="hello" class="btn btn-success" data-html="true" data-placement="top" data-toggle="tooltip" title="<h2>Hello World!</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, porro.</p>">Tooltip on top</button>
+
+    <br>
+    <hr>
+
+    <!-- TRIGGER WITH JS -->
+    <button class="btn btn-secondary" onClick="showToolTip()">Show Tooltip</button>
+
+    <button class="btn btn-warning" onClick="hideToolTip()">Hide Tooltip</button>
+
+    <button class="btn btn-danger" onClick="toggleToolTip()">Toggle Tooltip</button>
+
+    </div>
+
+  <div style="margin-top:500px;"></div>
+
+  <script src="js/jquery-slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $('[data-toggle="tooltip"]').tooltip();
+
+    function showToolTip(){
+      $('#hello').tooltip('show');
+    }
+
+    function hideToolTip(){
+      $('#hello').tooltip('hide');
+    }
+
+    function toggleToolTip(){
+      $('#hello').tooltip('toggle');
+    }
+  </script>
+</body>
+</html>
