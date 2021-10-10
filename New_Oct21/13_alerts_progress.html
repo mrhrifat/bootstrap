@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Alert &  Bars | Bootstrap 4</title>
+    <title>Alert & Bars | Bootstrap 4</title>
 </head>
+
 <body>
-      <h1 class="display-4 text-center my-4">Alerts &  Bars</h1>
-      <div class="container">
+    <h1 class="display-4 text-center my-4">Alerts & Bars</h1>
+    <div class="container">
         <!--########################START HERE#########################-->
 
         <!-- ALERTS -->
-        <div class="">
+        <div class="alert alert-success">
             <strong></strong> Blog post added <a class="alert-link" href="#">Check it out</a>
         </div>
-        <div class="">
+        <div class="alert alert-warning">
             <strong>Attention</strong> You have a new message <a class="alert-link" href="#">Check it out</a>
         </div>
-        <div class="">
+        <div class="alert alert-info">
             <strong></strong> Please check the log files <a class="alert-link" href="#">Check it out</a>
         </div>
-        <div class="">
+        <div class="alert alert-danger">
             <h4>There's a Problem</h4>
             <strong>Error</strong> Database update failed <a class="alert-link" href="#">Check it out</a>
         </div>
 
+        <div class="alert alert-success">
+            <h4>Post has been published</h4>
+            <strong>Success</strong> view your post <a class="alert-link" href="#">Here</a>
+        </div>
+
         <!-- DISMISSABLE -->
-        <div class=" ">
-            <button type="button" class="close" data-dismiss="alert">
+        <div class="alert alert-danger alert-dismissable fade-show">
+            <button type="button" class="close text-danger" data-dismiss="alert">
                 <span>&times;</span>
             </button>
             <strong></strong> Blog post added <a class="alert-link" href="#">Check it out</a>
         </div>
 
+        <br>
+
+        <div class="alert alert-success alert-dismissable fade-show">
+            <button class="close" data-dismiss="alert"><span>&times;</span></button>
+            <strong>Congratulation</strong> Post has been <a href="#" class="alert-link">published</a>
+        </div>
+
         <br><br>
 
         <!--  BARS -->
-        <div class="">
-            <div class="" style="width: 50%;">HTML</div>
+        <div class="progress">
+            <div class="progress-bar style=" width: 50%;">HTML</div>
         </div>
         <br>
-        <div class="">
-            <div class="" style="width: 25%;">25%</div>
+        <div class="progress">
+            <div class="progress-bar w-50">JS</div>
         </div>
         <br>
-        <div class="">
-            <div class=" " style="width: 50%">50%</div>
+        <div class="progress">
+            <div class="progress-bar style=" width: 25%;">25%</div>
         </div>
         <br>
-        <div class="">
-            <div class=" " style="width: 75%">75%</div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" style="width: 50%">50%</div>
         </div>
         <br>
-        <div class="">
-            <div class="  " style="width: 100%">100%</div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
         </div>
         <br>
-        <div class="">
-            <div class=" " style="width: 75%"></div>
+        <div class="progress">
+            <div class="progress-bar " style="width: 100%">100%</div>
         </div>
         <br>
-        <div class="">
-            <div class="  " style="width: 85%">Bootstrap</div>
+        <div class="progress">
+            <div class="progress-bar" style="width: 75%"></div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar " style="width: 85%">Bootstrap</div>
         </div>
 
     </div><!-- ./container -->
@@ -74,4 +92,5 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
