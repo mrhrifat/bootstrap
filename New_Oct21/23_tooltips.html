@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,41 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>Tooltips | Bootstrap 4</title>
 </head>
+
 <body>
   <h1 class="display-3 text-center my-4">Tooltips</h1>
   <div class="container">
     <!--########################START HERE#########################-->
 
     <!-- TOOLTIPS -->
-    <button class="btn btn-primary" data-placement="top" data-toggle="tooltip" title="Hello World!">Tooltip on top</button>
+    <button class="btn btn-primary" data-placement="top" data-toggle="tooltip" title="Hello World!">Tooltip on
+      top</button>
 
-    <button class="btn btn-primary" data-placement="left" data-toggle="tooltip" title="Hello World!">Tooltip on left</button>
+    <button class="btn btn-primary" data-placement="left" data-toggle="tooltip" title="Hello World!">Tooltip on
+      left</button>
 
-    <button class="btn btn-primary" data-placement="right" data-toggle="tooltip" title="Hello World!">Tooltip on right</button>
+    <button class="btn btn-primary" data-placement="right" data-toggle="tooltip" title="Hello World!">Tooltip on
+      right</button>
 
-    <button class="btn btn-primary" data-placement="bottom" data-toggle="tooltip" title="Hello World!">Tooltip on bottom</button>
+    <button class="btn btn-primary" data-placement="bottom" data-toggle="tooltip" title="Hello World!">Tooltip on
+      bottom</button>
+    <br>
+    <br>
+
+    <button class="btn btn-success" data-toggle="tooltip" title="Yes...Top" data-placement="top">Top</button>
+    <button class="btn btn-success" data-toggle="tooltip" title="Yes...Left" data-placement="left">Left</button>
+    <button class="btn btn-success" data-toggle="tooltip" title="Yes...Bottom" data-placement="bottom">Bottom</button>
+    <button class="btn btn-success" data-toggle="tooltip" title="Yes...Right" data-placement="right">Right</button>
 
     <br> <br>
 
     <!-- TOOLTIPS WITH HTML -->
-    <button id="hello" class="btn btn-success" data-html="true" data-placement="top" data-toggle="tooltip" title="<h2>Hello World!</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, porro.</p>">Tooltip on top</button>
+    <button id="hello" class="btn btn-success" data-html="true" data-placement="top" data-toggle="tooltip"
+      title="<h2>Hello World!</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, porro.</p>">Tooltip
+      on top</button>
+
+    <button class="btn btn-success" data-html="true" data-placement="top" data-toggle="tooltip"
+      title="<h4>I am HTML title</h4><br><p>This is a description of HTML title</p>">Google</button>
 
     <br>
     <hr>
@@ -36,7 +54,7 @@
 
     <button class="btn btn-danger" onClick="toggleToolTip()">Toggle Tooltip</button>
 
-    </div>
+  </div>
 
   <div style="margin-top:500px;"></div>
 
@@ -47,17 +65,18 @@
   <script>
     $('[data-toggle="tooltip"]').tooltip();
 
-    function showToolTip(){
+    function showToolTip() {
       $('#hello').tooltip('show');
     }
 
-    function hideToolTip(){
+    function hideToolTip() {
       $('#hello').tooltip('hide');
     }
 
-    function toggleToolTip(){
+    function toggleToolTip() {
       $('#hello').tooltip('toggle');
     }
   </script>
 </body>
+
 </html>

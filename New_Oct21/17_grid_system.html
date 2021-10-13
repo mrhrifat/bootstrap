@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,58 +8,71 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>Grid System | Bootstrap 4</title>
 </head>
+
 <body>
-    <h1 class="display-3 text-center my-4">Grid System</h1>
-	  <div class="container">
+  <h1 class="display-3 text-center my-4">Grid System</h1>
+  <div class="container">
     <!--########################START HERE#########################-->
 
     <!-- AUTO LAYOUT COLUMNS -->
-    <div class="">
-      <div class="">
+    <div class="row">
+      <div class="col">
         <h3>Moshiur</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum quidem mollitia, corrupti fuga dolore distinctio ullam maiores ipsam. Ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum quidem mollitia, corrupti fuga dolore
+          distinctio ullam maiores ipsam. Ratione.</p>
       </div>
-      <div class="">
+      <div class="col">
         <h3>Moshiur</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum quidem mollitia, corrupti fuga dolore distinctio ullam maiores ipsam. Ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum quidem mollitia, corrupti fuga dolore
+          distinctio ullam maiores ipsam. Ratione.</p>
       </div>
     </div>
 
-  <br>
+    <br>
     <!-- RESPONSIVE CLASSES -->
-    <div class="">
-      <div class="">
+    <div class="row">
+      <div class="col-12 col-md-4 col-sm-3">
         <h3>Moshiur</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum quidem mollitia, corrupti fuga dolore distinctio ullam maiores ipsam. Ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum quidem mollitia, corrupti fuga dolore
+          distinctio ullam maiores ipsam. Ratione.</p>
       </div>
-      <div class=" ">
+      <div class="col-12 col-md-4 col-sm-3">
         <h3>Moshiur</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum quidem mollitia, corrupti fuga dolore distinctio ullam maiores ipsam. Ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum quidem mollitia, corrupti fuga dolore
+          distinctio ullam maiores ipsam. Ratione.</p>
       </div>
-      <div class=" ">
+      <div class="col-12 col-md-4 col-sm-3">
         <h3>Moshiur</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum quidem mollitia, corrupti fuga dolore distinctio ullam maiores ipsam. Ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum quidem mollitia, corrupti fuga dolore
+          distinctio ullam maiores ipsam. Ratione.</p>
       </div>
     </div>
 
     <br>
     <!-- NESTING GRIDS -->
-    <div class="">
-      <div class="">
-        <div class="">
-          <div class="">
+    <div class="row">
+      <div class="col col-md-6">
+        <div class="card">
+          <div class=card-body">
             <h3>Moshiur</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dolore?</p>
-            <div class="">
-              <div class=" ">
-                <div class="">
-                  <div class="">
+            <div class="row">
+              <div class="col col-md-6 mt-2">
+                <div class="card">
+                  <div class="card-body">
                     <h3>Moshiur</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, sapiente.</p>
                   </div>
                 </div>
               </div>
-              <div class=" "><div class=""><div class=""><h3>Moshiur</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, sapiente.</p></div></div></div>
+              <div class="col col-md-6 mt-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h3>Moshiur</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, sapiente.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -67,33 +81,35 @@
 
     <br>
     <!-- OFFSETTING UMNS -->
-    <div class="">
-      <div class="">
+    <div class="row">
+      <div class="col-3 offset-3">
         <h3>Moshiur</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores distinctio itaque ducimus labore, quam repudiandae placeat, ut omnis deserunt minima!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores distinctio itaque ducimus labore, quam
+          repudiandae placeat, ut omnis deserunt minima!</p>
       </div>
-      <div class="">
+      <div class="col-3 offset-3">
         <h3>Moshiur</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores distinctio itaque ducimus labore, quam repudiandae placeat, ut omnis deserunt minima!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores distinctio itaque ducimus labore, quam
+          repudiandae placeat, ut omnis deserunt minima!</p>
       </div>
     </div>
 
-  <br>
+    <br>
     <!-- REORDERING -->
-    <div class="">
-      <div class="">
+    <div class="row">
+      <div class="col-3 order-3">
         <h3>First umn</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, modi!</p>
       </div>
-      <div class="">
+      <div class="col-3 order-4">
         <h3>Second umn</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, modi!</p>
       </div>
-      <div class="">
+      <div class="col-3 order-2">
         <h3>Third umn</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, modi!</p>
       </div>
-      <div class="">
+      <div class="col-3 order-1">
         <h3>Fourth umn</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, modi!</p>
       </div>
@@ -108,4 +124,5 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

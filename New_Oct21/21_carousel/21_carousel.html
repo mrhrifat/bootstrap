@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>Carousel Slider | Bootstrap 4</title>
 </head>
+
 <body>
   <h1 class="display-4 text-center my-4">Carousel Slider</h1>
   <div class="container">
@@ -50,6 +52,74 @@
       </a>
     </div>
 
+    <br>
+
+    <div id="slide2" class="carousel-slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img src="./img/a.jpg" alt="" class="d-block img-fluid">
+          <div class="carousel-caption">
+            <h4>Hi</h4>
+            <p>Ask and it will be given to you, search and you will find</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/b.jpg" alt="" class="d-block img-fluid">
+          <div class="carousel-caption">
+            <h4>Hi</h4>
+            <p>Ask and it will be given to you, search and you will find</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/c.jpg" alt="" class="d-block img-fluid">
+          <div class="carousel-caption">
+            <h4>Hi</h4>
+            <p>Ask and it will be given to you, search and you will find</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="carousel slide" id="slide3" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#slide3" data-slide-to="0"></li>
+        <li data-target="#slide3" data-slide-to="1"></li>
+        <li data-target="#slide3" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img src="./img/a.jpg" alt="" class="img-fluid d-block">
+          <div class="carousel-caption">
+            <h5>H1</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rerum eum eveniet ab totam cum fuga.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/b.jpg" alt="" class="img-fluid d-block">
+          <div class="carousel-caption">
+            <h5>H2</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rerum eum eveniet ab totam cum fuga.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/c.jpg" alt="" class="img-fluid d-block">
+          <div class="carousel-caption">
+            <h5>H3</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, rerum eum eveniet ab totam cum fuga.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#slide3" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#slide3" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
 
   </div>
 
@@ -61,11 +131,12 @@
 
   <script>
     $('.carousel').carousel({
-      interval : 2000,
+      interval: 2000,
       pause: 'hover',
       wrap: true,
       keyboard: true
     });
   </script>
 </body>
+
 </html>

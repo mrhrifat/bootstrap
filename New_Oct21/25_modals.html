@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>Modals | Bootstrap 4</title>
 </head>
+
 <body>
   <h1 class="display-3 text-center my-4">Modals</h1>
   <div class="container">
@@ -24,7 +26,8 @@
             <button class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste doloremque quaerat possimus quidem nam maiores, consectetur deserunt, ea tempore deleniti.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste doloremque quaerat possimus quidem nam
+            maiores, consectetur deserunt, ea tempore deleniti.
           </div>
           <div class="modal-footer">
             <button class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -32,6 +35,34 @@
         </div>
       </div>
     </div>
+
+    <br><br><br>
+
+
+    <button class="btn-warning btn" data-target="#warning" data-toggle="modal">Warning</button>
+
+
+    <div class="modal" id="warning">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>This is your last warning</h4>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum omnis saepe debitis maxime, dolorem eius
+              est eos repudiandae dicta repellendus sunt amet necessitatibus vel molestias voluptas quia ad minus optio.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary">I Understand</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br><br><br>
 
     <br> <br>
     <!-- LOGIN MODAL -->
@@ -64,7 +95,46 @@
       </div>
     </div>
 
+    <br><br><br>
+
+
+    <button class="btn-danger btn" data-target="#sign" data-toggle="modal">SignUp</button>
+
+    <div class="modal" id="sign">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Sign Up</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" required placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" required placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" required placeholder="Enter password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-dismiss="modal">Close</button>
+            <button class="btn btn-success">SignUp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
   </div>
+
+
+
 
   <div style="margin-top:500px;"></div>
 
@@ -72,4 +142,5 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
