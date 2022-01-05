@@ -14,7 +14,7 @@ Every Web Developer sometimes need to learn Bootstrap. Because it is very easy t
 - [Template](https://github.com/mrhrifat/bootstrap-practice/tree/master/Template)
 
 ## How To Use
-1. Clone [Template](https://github.com/mrhrifat/bootstrap-practice/tree/master/Template) Repository or [Full Repository](https://github.com/mrhrifat/bootstrap).
+1. Clone [Template](https://github.com/mrhrifat/bootstrap-practice/tree/master/Template) Directory or [Full Repository](https://github.com/mrhrifat/bootstrap).
 2. Run to web by following file name.
 ```
 1_basic_typography.html
